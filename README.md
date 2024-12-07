@@ -74,3 +74,4 @@ array:      .word 15, 25, 35, 45, 55   # Array de exemplo com novos valores
 5. **Resultados**:
    - O código irá calcular a soma dos elementos do array e armazenar o resultado no endereço de memória `sum`.
    - A soma será exibida no simulador, conforme a lógica definida no código.
+   - Você poderá visualizar na **pipeline** do simulador o caminho percorrido pelas instruções durante a execução do código, ajudando a entender como os dados são processados e manipulados em cada estágio.
