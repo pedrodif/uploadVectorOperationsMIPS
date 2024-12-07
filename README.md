@@ -4,9 +4,10 @@ Este trabalho tem como objetivo explorar a linguagem Assembly MIPS, utilizando o
 
 ## Pré-requisitos
 
-Para executar este código, é necessário:
+Para alcançar o objetivo deste trabalho, é necessário utilizar as seguintes ferramentas:
 
-- **JsSpim**: O código foi desenvolvido para ser executado no simulador **JsSpim**, uma ferramenta online que simula a execução de programas escritos em Assembly MIPS.
+- **JsSpim**: Um simulador online para executar programas em Assembly MIPS.
+- **Mips-Datapath-Simulator**: Um simulador que permite visualizar e simular o caminho de dados e operações de um programa MIPS.
 
 ## Execução
 
@@ -44,3 +45,32 @@ Para testar outros arrays de inteiros, basta modificar o array dentro do código
 array:      .word 15, 25, 35, 45, 55   # Array de exemplo com novos valores
 
 ```
+
+## Execução
+
+### Como Executar no Mips-Datapath-Simulator
+
+1. **Acesse o Mips-Datapath-Simulator**:
+   - Abra o **Mips-Datapath-Simulator** através do link: [Mips-Datapath-Simulator](https://saliherdemk.github.io/Mips-Datapath-Simulator/).
+
+2. **Carregue o Código**:
+   - Copie o código Assembly fornecido.
+   - Cole o código na interface do simulador.
+
+3. **Carregar o Array na Memória**:
+   - Carregue os valores do array `[15, 25, 35, 45, 55]` manualmente na seção de **Memory** (Memória) do simulador.
+     - Insira os valores nos seguintes endereços:
+       - **Endereço 0x00000000**: 15
+       - **Endereço 0x00000004**: 25
+       - **Endereço 0x00000008**: 35
+       - **Endereço 0x0000000C**: 45
+       - **Endereço 0x00000010**: 55
+
+   - No simulador, você precisa configurar a operação de soma **add** e a operação de armazenamento **sw** e atribuí-las a um endereço de memória específico.
+
+4. **Executando o Código**:
+   - Clique no botão **Run** para executar o código no simulador.
+
+5. **Resultados**:
+   - O código irá calcular a soma dos elementos do array e armazenar o resultado no endereço de memória `sum`.
+   - A soma será exibida no simulador, conforme a lógica definida no código.
